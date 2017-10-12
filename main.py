@@ -9,13 +9,13 @@ import pathfinder
 
 def react(arr):
   command = 'about'
-  
+
   if len(arr) > 1:
     command = arr[1]
-  
+
   if command in data.AUTO_REPLY:
     return data.AUTO_REPLY[command]
-  
+
   if command == 'getpath':
     if len(arr) != 4:
       return 'Invalid number of arguments.'
@@ -34,6 +34,7 @@ if __name__ == '__main__':
   while True:
     message = api.get_last_message()
     body = message['body'].split()
+    print(body)
     if message == last_message:
       continue
     last_message = message
