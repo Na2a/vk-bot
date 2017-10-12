@@ -9,7 +9,7 @@ CHAT_ID = 253401848 # pm
 APP_ID = 6144282
 LOGIN = 'nazarbek.altybay@gmail.com'
 
-PASSWORD = input()
+PASSWORD = str(input("passwd: "))
 
 # auto-reply
 AUTO_REPLY = {
